@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+    <title>Sibin weds Nikhitha</title>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/lovers.css" rel="stylesheet">
+  	<link href="css/icons.css" rel="stylesheet" type="text/css">
+  	<link href="css/bootstrap.css" rel="stylesheet" type="text/csc">
+  	<link href="css/style.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/navigation-round.css"> 
+     	<style>
+		p{font-family: cursive;
+		  Text-align : center}
+
+	</style>
+	
+</head>
+<body>
+<style>
+    .snow-canvas {
+        top: 0;
+        left: 0;
+        position: fixed;
+        border-top: 3px solid rgb(209, 50, 95);
+        display: block;
+        height: 100%;
+        pointer-events: none;
+    }
+</style>
+	<canvas class="snow-canvas" id="world" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="600"></canvas>
+
+	<canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="600"></canvas>
+	<canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5" image="imgs/snow.png" width="1366" height="600"></canvas>
+
+
+<div>
+     <section class="hero-container">
+      <div class="hero-slide">
+        <div class="hero-slide-content">
+          <div class="container">
+            <div class="row row-eq-height">
+              <div class="col-md-12">
+                <div class="slide-content">
+   			     <!--   <img id="image"/>-->
+				<img src="imgs/image.png"/>
+                  <p>We are getting married..<p>
+                  <br>
+                  <p>
+                    <h1>Sibin<br>&amp;<br>Nikhitha</h1> 
+                  </p>
+                  <div class="hero-date">
+                  <p>Save the Date and Please Join us on</p>
+                  <br>
+                  <h2><span id="eventInfo"></span></h2>
+                  </div> 
+		<p id="demo"></p>
+
+	<script>
+	var countDownDate = new Date("Aug 23, 2018 11:00:00").getTime();
+	var x = setInterval(function() {
+    	var now = new Date().getTime();
+    	var distance = countDownDate - now;
+   	 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   	 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    	document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+   	 + minutes + "m " + seconds + "s ";
+   	 if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "MARRIED";
+    	}
+	}, 1000);
+	</script>
+                      <p>until we get married... :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<div>
+     <section class="hero-container">
+      <div class="hero-slide">
+        <div class="hero-slide-content">
+          <div class="container">
+            <div class="row row-eq-height">
+              <div class="col-md-12">
+                <div class="slide-content">
+                  <img src="imgs/home.png"/>
+                  <p class="hero-slide-large">Venue</p>
+                   <p> <span id="venue"></span> </p>
+                   <p></p>
+                   <br/>
+			<p><i>Reception to follow @ Parish Auditorium</i></p>
+                   <br/>
+           <a id="venueUrl" href="#"><img class="map" src="imgs/map2.png"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+ <footer>
+    
+  </footer>
+
+<script src="js/snow-plugin.js"></script>
+<!--<script type="text/javascript" src="js/jquery.countdown.min.js"></script>-->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
